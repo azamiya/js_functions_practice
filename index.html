@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JS functions practice</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+  <h1>JavaScript functions practice</h1>
+  <h3>Open the web console and try these functions work well or not.</h3>
+  <h2>isAtom(Arg) -> boolean</h2>
+  <p>Returns true if Arg is string or number, otherwise false.</p>
+  <p>引数が文字か数字の時にtrueを返し、その他はfalseを返します。</p>
+  <p>isAtom("Hello");<span class="comment-like">//returns true</span></p>
+  <p>isAtom(123);<span class="comment-like">//returns true</span></p>
+  <p>isAtom([1, 2, 3]);<span class="comment-like">//returns false</span></p>
+  <p>isAtom();<span class="comment-like">//returns false</span></p>
+
+  <h2>isLat(Arg) -> boolean</h2>
+  <p>Returns true if Arg is list which is contained by Atom, otherwise false.</p>
+  <p>引数がAtomからなる配列であったらtrueを、そうでなければfalseを返します。</p>
+  <p>isLat([1, 2, 3]);<span class="comment-like">//returns true</span></p>
+  <p>isLat(["This", "is", "a", "Pen"]);<span class="comment-like">//returns true</span></p>
+  <p>isLat([]);<span class="comment-like">//returns true</span></p>
+  <p>isLat([[]]);<span class="comment-like">//returns false</span></p>
+  <p>isLat("Hello");<span class="comment-like">//returns false</span></p>
+  <p>isLat(123);<span class="comment-like">//returns false</span></p>
+
+  <h2>isMember(Arg1, Arg2) -> boolean</h2>
+  <h3>Arg1 :: Atom, Arg2 :: Lat</h3>
+  <p>Returns true if Arg1(Lat) contains Arg1(Atom), otherwise false.</p>
+  <p>第二引数(Lat)が第一引数(Atom)を含んでいたらtrueを、その他はfalseを返します。</p>
+  <p>isMember(1, [1, 2, 3]);<span class="comment-like">//returns true</span></p>
+  <p>isMember("Pen", ["This", "is", "a", "Pen"]);<span class="comment-like">//returns true</span></p>
+  <p>isMember(1, []);<span class="comment-like">//returns false</span></p>
+</body>
+</html>
