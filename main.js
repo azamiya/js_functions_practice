@@ -47,3 +47,24 @@ function rember(atom, lat) {
   return l;
 }
 
+function firsts(arg) {
+  let l = [];
+  if (arg == []) return l;
+  for (i = 0; i < arg.length; i++) {
+    for (j = 0; j < arg[i].length; j++) {
+      if (j == 0) l.push(arg[i][0]);
+    }
+  }
+  return l;
+}
+
+function seconds(arg) {
+  let l = [];
+  if (arg == []) return l;
+  for (i = 0; i < arg.length; i++) {
+    for (j = 0; j < arg[i].length; j++) {
+      if (j == 1) l.push(arg[i][1]);
+    }
+  }
+  return l;
+}
